@@ -26,15 +26,15 @@
                         <form action="" method="post">
                             <div class="form-group row">
                                 <input type="hidden" name="id" value="<?= $persyaratan->id ?>">
-                                <label for="nama_persyaratan" class="col-md-2">Nama Persyaratan Beasiswa</label>
+                                <label for="beasiswa_id" class="col-md-2">ID Beasiswa</label>
                                 <div class="col-md-10">
-                                    <input type="text" name="nama_persyaratan" required placeholder="Nama Persyaratan Beasiswa" value="<?= $persyaratan->nama_persyaratan ?>" class="form-control">
+                                    <input type="text" name="beasiswa_id" required placeholder="ID Beasiswa" value="<?= $persyaratan->beasiswa_id ?>" class="form-control">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="keterangan" class="col-md-2">Keterangan</label>
+                                <label for="persyaratan_id" class="col-md-2">ID Persyaratan</label>
                                 <div class="col-md-10">
-                                    <input type="text" name="keterangan" required placeholder="Keterangan" value="<?= $persyaratan->keterangan ?>" class="form-control">
+                                    <input type="text" name="persyaratan_id" required placeholder="ID Persyaratan" value="<?= $persyaratan->persyaratan_id ?>" class="form-control">
                                 </div>
                             </div>
                             <a href="<?= base_url('persyaratan') ?>" class="btn btn-sm btn-danger float-right">Batal</a>

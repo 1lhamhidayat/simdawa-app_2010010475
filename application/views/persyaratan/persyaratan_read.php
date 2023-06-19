@@ -27,8 +27,8 @@
                             <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>Persyaratan Beasiswa</th>
-                                    <th>Keterangan</th>
+                                    <th>ID Beasiswa</th>
+                                    <th>ID Persyaratan</th>
                                     <th>Aksi</th>
                                 </tr>
                             </thead>
@@ -38,8 +38,8 @@
                                 ?>
                                     <tr>
                                         <td><?= $no++ ?></td>
-                                        <td><?= $a->nama_persyaratan ?></td>
-                                        <td><?= $a->keterangan ?></td>
+                                        <td><?= $a->beasiswa_id ?></td>
+                                        <td><?= $a->persyaratan_id ?></td>
                                         <td>
                                             <a href="<?= base_url('persyaratan/ubah/' . $a->id) ?>" class="btn btn-sm btn-info"><i class="fas fa-edit"></i> Ubah</a>
                                             <a href="<?= base_url('persyaratan/hapus/' . $a->id) ?>" class="btn btn-sm btn-danger" onclick="return confirm('Ingin hapus data ini?')"><i class="fas fa-trash"></i> Hapus</a>

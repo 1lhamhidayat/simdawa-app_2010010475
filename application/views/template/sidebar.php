@@ -24,7 +24,10 @@
                                     <a class="nav-link" href="<?php echo base_url('jenis') ?>">Jenis Beasiswa</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="<?php echo base_url('persyaratan') ?>">Persyaratan</a>
+                                    <a class="nav-link" href="<?php echo base_url('persyaratan') ?>">Persyaratan Beasiswa</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="<?php echo base_url('prodi') ?>">Prodi</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="<?php echo base_url('pendaftaran') ?>">Pendaftaran Akun</a>

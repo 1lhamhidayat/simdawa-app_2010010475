@@ -26,7 +26,7 @@ class Prodi extends CI_Controller
             $this->ProdiModel->insert_prodi();
             redirect('prodi');
         } else {
-            $data['title'] = "Tambah Data Prodi Beasiswa | SIMDAWA-APP";
+            $data['title'] = "Tambah Data Prodi | SIMDAWA-APP";
             $this->load->view('template/header', $data);
             $this->load->view('template/sidebar');
             $this->load->view('prodi/prodi_create');
@@ -40,7 +40,7 @@ class Prodi extends CI_Controller
             $this->ProdiModel->update_prodi();
             redirect('prodi');
         } else {
-            $data['title'] = "Perbaharui Data Prodi Beasiswa | SIMDAWA-APP";
+            $data['title'] = "Perbaharui Data Prodi | SIMDAWA-APP";
             $data['prodi'] = $this->ProdiModel->get_prodi_byid($id);
             $this->load->view('template/header', $data);
             $this->load->view('template/sidebar');

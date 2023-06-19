@@ -25,15 +25,15 @@
                     <div class="card-body">
                         <form action="" method="post">
                             <div class="form-group row">
-                                <label for="nama_persyaratan" class="col-md-2">Nama Persyaratan Beasiswa</label>
+                                <label for="beasiswa_id" class="col-md-2">ID Beasiswa</label>
                                 <div class="col-md-10">
-                                    <input type="text" name="nama_persyaratan" require placeholder="Nama Persyaratan Beasiswa" class="form-control">
+                                    <input type="text" name="beasiswa_id" require placeholder="ID Beasiswa" class="form-control">
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="keterangan" class="col-md-2">Keterangan</label>
+                                <label for="persyaratan_id" class="col-md-2">ID Persyaratan</label>
                                 <div class="col-md-10">
-                                    <input type="text" name="keterangan" require placeholder="Keterangan" class="form-control">
+                                    <input type="text" name="persyaratan_id" require placeholder="ID Persyaratan" class="form-control">
                                 </div>
                             </div>
                             <a href="<?= base_url('persyaratan') ?>" class="btn btn-sm btn-danger float-right">Batal</a>

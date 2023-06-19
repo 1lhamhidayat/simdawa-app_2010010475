@@ -12,8 +12,8 @@ class PersyaratanModel extends CI_Model
     public function insert_persyaratan()
     {
         $data = [
-            'nama_persyaratan' => $this->input->post('nama_persyaratan'),
-            'keterangan' => $this->input->post('keterangan')
+            'beasiswa_id' => $this->input->post('beasiswa_id'),
+            'persyaratan_id' => $this->input->post('persyaratan_id')
         ];
         $this->db->insert($this->tabel, $data);
     }
@@ -26,8 +26,8 @@ class PersyaratanModel extends CI_Model
     public function update_persyaratan()
     {
         $data = [
-            'nama_persyaratan' => $this->input->post('nama_persyaratan'),
-            'keterangan' => $this->input->post('keterangan')
+            'beasiswa_id' => $this->input->post('beasiswa_id'),
+            'persyaratan_id' => $this->input->post('persyaratan_id')
         ];
         $this->db->where('id', $this->input->post('id'));
         $this->db->update($this->tabel, $data);
